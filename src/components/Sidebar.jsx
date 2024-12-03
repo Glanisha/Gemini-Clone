@@ -7,11 +7,10 @@ const Sidebar = () => {
 
   return (
     <div
-    className={`${
-      extended ? "w-[260px]" : "w-[80px]"
-    } h-screen bg-white border-r border-gray-200 flex flex-col transition-all duration-100`}
-  >
-  
+      className={`${
+        extended ? "w-[260px]" : "w-[80px]"
+      } h-screen bg-white border-r border-gray-200 flex flex-col transition-all duration-100 font-outfit`}
+    >
       <div className="p-4 flex flex-col ">
         <button
           onClick={() => setextended((prev) => !prev)}
