@@ -2,9 +2,11 @@ import React from "react";
 import { assets } from "../assets/gemini-clone-assets/assets/assets";
 import { useState } from "react";
 
+
 const Sidebar = () => {
   const [extended, setextended] = useState(false);
-
+  
+  
   return (
     <div
       className={`${
@@ -29,14 +31,22 @@ const Sidebar = () => {
           ) : null}
         </button>
       </div>
+      {extended ? (
+            <span className="text-sm text-gray-700 px-4 ">Recents</span>
+          ) : null}
 
-      <div className="px-4 py-6 flex-1">
+
+
+
+      <div className="px-4 py-3 flex-1">
         <div className="hover:bg-[#f1f3f5]  rounded-lg p-3 flex items-center">
           <img
             src={assets.message_icon}
             alt=""
             className="w-5 h-5 mr-2 text-gray-600"
           />
+          
+         
           {extended ? (
             <span className="text-sm text-gray-600 truncate">
               What is React?...
