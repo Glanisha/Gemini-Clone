@@ -2,6 +2,7 @@ import React, { useContext } from "react";
 import { assets } from "../assets/gemini-clone-assets/assets/assets";
 import Card from "./Card";
 import { Context } from "../context/Context";
+import "./main.css"
 
 const Main = () => {
   const {
@@ -76,8 +77,11 @@ const Main = () => {
               className="rounded-3xl size-10 "
             />
             {loading ? (
-              <div>
-                <p>Loading</p>
+              <div className="loader">
+                <hr />
+                <hr />
+                <hr />
+                <hr />
               </div>
             ) : (
               <p dangerouslySetInnerHTML={{ __html: resultData }}></p>
